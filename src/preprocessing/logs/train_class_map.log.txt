@@ -1,0 +1,29 @@
+Tuesday, October 22 (work computer)
+Successfully mapped ../../dataset/train\dry_asphalt_severe in 2 seconds
+Successfully mapped ../../dataset/train\dry_asphalt_slight in 7 seconds
+Error renaming folder dry_asphalt_smooth: [WinError 5] Access is denied: '../../dataset/train\\dry_asphalt_smooth' -> '../../dataset/train\\dry_asphalt_good'
+Successfully mapped ../../dataset/train\dry_asphalt_smooth in 19 seconds
+Successfully mapped ../../dataset/train\dry_concrete_severe in 10 seconds
+Successfully mapped ../../dataset/train\dry_concrete_slight in 4 seconds
+Successfully mapped ../../dataset/train\dry_concrete_smooth in 18 seconds
+Successfully mapped ../../dataset/train\dry_gravel in 0 seconds
+Successfully mapped ../../dataset/train\dry_mud in 0 seconds
+Successfully mapped ../../dataset/train\fresh_snow in 0 seconds
+Successfully mapped ../../dataset/train\ice in 0 seconds
+Successfully mapped ../../dataset/train\melted_snow in 0 seconds
+Successfully mapped ../../dataset/train\water_asphalt_severe in 1 seconds
+Successfully mapped ../../dataset/train\water_asphalt_slight in 1 seconds
+Successfully mapped ../../dataset/train\water_asphalt_smooth in 18 seconds
+Successfully mapped ../../dataset/train\water_concrete_severe in 1 seconds
+Successfully mapped ../../dataset/train\water_concrete_slight in 1 seconds
+Successfully mapped ../../dataset/train\water_concrete_smooth in 8 seconds
+Successfully mapped ../../dataset/train\water_gravel in 0 seconds
+Successfully mapped ../../dataset/train\water_mud in 0 seconds
+Successfully mapped ../../dataset/train\wet_asphalt_severe in 0 seconds
+Successfully mapped ../../dataset/train\wet_asphalt_slight in 5 seconds
+Successfully mapped ../../dataset/train\wet_asphalt_smooth in 17 seconds
+Successfully mapped ../../dataset/train\wet_concrete_severe in 1 seconds
+Successfully mapped ../../dataset/train\wet_concrete_slight in 1 seconds
+Successfully mapped ../../dataset/train\wet_concrete_smooth in 14 seconds
+Successfully mapped ../../dataset/train\wet_gravel in 0 seconds
+Successfully mapped ../../dataset/train\wet_mud in 0 seconds
