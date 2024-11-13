@@ -28,7 +28,7 @@ for folder in folders:
     image_names = os.listdir(folder_path)
 
     # Returns True or False if any word in og_class_names is found in the folder_name
-    contains_mapped_class = should_explore = any(word in folder_name for word in og_class_names)
+    contains_mapped_class = any(word in folder_name for word in og_class_names)
 
     # Check if folder needs to be explored
     if contains_mapped_class:
