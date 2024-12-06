@@ -26,3 +26,13 @@ Project originally run and executed on Windows 10 ver. 10.0.19045 Build 19045 by
     else:
         raise Exception("No GPU available") 
     ```
+
+# Clean the Dataset
+1. Make sure your dataset folder structure looks like this:
+```
+dataset\
+|---test\
+|---train\
+|---validation\
+```
+2. Run `python .\src\run_preprocessing.py` to execute all preprocessing steps

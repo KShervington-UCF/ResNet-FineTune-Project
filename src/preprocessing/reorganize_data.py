@@ -4,6 +4,11 @@ import time
 
 # Code by ChatGPT o1-preview
 
+def get_dataset_dir():
+    """Get the absolute path to the dataset directory"""
+    current_dir = os.path.dirname(os.path.abspath(__file__))
+    return os.path.abspath(os.path.join(current_dir, '..', '..', 'dataset'))
+
 def extract_class_label(filename):
     """
     Extract the class label from the filename.
@@ -22,7 +27,8 @@ def extract_class_label(filename):
         return class_label
 
 # Paths to your datasets
-data_dirs = ['../../dataset/validation', '../../dataset/test']  # Update paths as needed
+dataset_dir = get_dataset_dir()
+data_dirs = [os.path.join(dataset_dir, split) for split in ['validation', 'test']]
 
 for data_dir in data_dirs:
     print(f"Processing directory: {data_dir}")
@@ -30,7 +36,11 @@ for data_dir in data_dirs:
     start = time.time()
 
     # List all files in the directory
-    file_list = os.listdir(data_dir)
+    try:
+        file_list = os.listdir(data_dir)
+    except FileNotFoundError:
+        print(f"Error: Directory not found: {data_dir}")
+        continue
     
     for filename in file_list:
         # Full path to the file
