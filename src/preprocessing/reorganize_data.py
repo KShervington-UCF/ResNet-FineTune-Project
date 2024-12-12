@@ -3,6 +3,7 @@ import shutil
 import time
 
 # Code by ChatGPT o1-preview
+# Organizes images into folders based on their class labels
 
 def get_dataset_dir():
     """Get the absolute path to the dataset directory"""
