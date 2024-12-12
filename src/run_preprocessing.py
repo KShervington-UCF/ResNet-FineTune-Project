@@ -57,7 +57,6 @@ def main(downsize_num=0):
     
     # Add remaining scripts
     scripts.extend([
-        'map_class_names.py',
         'underscore_to_dash.py',
         'reduce_classes.py',
     ])
