@@ -79,9 +79,9 @@ def main(target_num):
         print(f"Error: Training directory not found: {train_dir}")
         return
         
-    reduction_ratio = get_reduction_ratio(train_dir, target_num)
-    
-    print(f"\nReduction ratio calculated from training set: {reduction_ratio:.2%}")
+    # Not currently using reduction ration
+    # reduction_ratio = get_reduction_ratio(train_dir, target_num)
+    # print(f"\nReduction ratio calculated from training set: {reduction_ratio:.2%}")
     
     # Process each split
     for split in splits:
@@ -89,11 +89,6 @@ def main(target_num):
         print(f"\nProcessing {split} dataset...")
 
         delete_to_n(split_dir, target_num)  # Use absolute target for training
-
-        # if split == 'train':
-        #     delete_to_n(split_dir, target_num)  # Use absolute target for training
-        # else:
-        #     delete_to_n(split_dir, target_num, reduction_ratio)  # Use ratio for val/test
 
 if __name__ == "__main__":
     parser = argparse.ArgumentParser(description='Delete images to reach a target number per class')

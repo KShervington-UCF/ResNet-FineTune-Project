@@ -49,17 +49,12 @@ def main(downsize_num=0):
         sys.exit(1)
 
     # Base scripts list
-    scripts = ['reorganize_data.py']
-    
+    scripts = ['reorganize_data.py', 'underscore_to_dash.py',
+        'reduce_classes.py',]
+
     # Add delete_to_n.py if downsizing is requested
     if downsize_num > 0:
         scripts.append(f'delete_to_n.py {downsize_num}')
-    
-    # Add remaining scripts
-    scripts.extend([
-        'underscore_to_dash.py',
-        'reduce_classes.py',
-    ])
     
     success = True
     for script in scripts:
