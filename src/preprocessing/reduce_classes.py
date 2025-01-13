@@ -12,14 +12,14 @@ def get_dataset_dir():
 # Define the class mapping for reduction
 class_mapping = {
     # Asphalt classes (dry)
-    'dry-asphalt-smooth': 'asphalt-good',
-    'dry-asphalt-slight': 'asphalt-intermediate',
-    'dry-asphalt-severe': 'asphalt-bad',
+    'dry-asphalt-smooth': 'dry-asphalt-good',
+    'dry-asphalt-slight': 'dry-asphalt-intermediate',
+    'dry-asphalt-severe': 'dry-asphalt-bad',
     
     # Asphalt classes (wet)
-    'wet-asphalt-smooth': 'asphalt-good',
-    'wet-asphalt-slight': 'asphalt-intermediate',
-    'wet-asphalt-severe': 'asphalt-bad',
+    'wet-asphalt-smooth': 'wet-asphalt-good',
+    'wet-asphalt-slight': 'wet-asphalt-intermediate',
+    'wet-asphalt-severe': 'wet-asphalt-bad',
     
     # Water-covered asphalt
     'water-asphalt-smooth': 'water-asphalt',
@@ -27,14 +27,14 @@ class_mapping = {
     'water-asphalt-severe': 'water-asphalt',
     
     # Concrete classes (dry)
-    'dry-concrete-smooth': 'paved-good',
-    'dry-concrete-slight': 'paved-intermediate',
-    'dry-concrete-severe': 'paved-bad',
+    'dry-concrete-smooth': 'dry-paved-good',
+    'dry-concrete-slight': 'dry-paved-intermediate',
+    'dry-concrete-severe': 'dry-paved-bad',
     
     # Concrete classes (wet)
-    'wet-concrete-smooth': 'paved-good',
-    'wet-concrete-slight': 'paved-intermediate',
-    'wet-concrete-severe': 'paved-bad',
+    'wet-concrete-smooth': 'wet-paved-good',
+    'wet-concrete-slight': 'wet-paved-intermediate',
+    'wet-concrete-severe': 'wet-paved-bad',
     
     # Water-covered concrete
     'water-concrete-smooth': 'water-paved',
