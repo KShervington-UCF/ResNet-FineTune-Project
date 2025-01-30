@@ -1,5 +1,6 @@
 .conda
 dataset/**/*.jpg
+dataset_rapid
 src/model/*.h5
 tf_gpu_env
 env
